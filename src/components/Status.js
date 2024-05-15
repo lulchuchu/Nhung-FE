@@ -41,16 +41,6 @@ export function Status() {
         },
     ];
 
-    const initialData = [
-        { id: 1, name: "John Doe", age: 25, status: 1 },
-        { id: 2, name: "Jane Smith", age: 30, status: 0 },
-        { id: 3, name: "John Doe", age: 25, status: 1 },
-        { id: 4, name: "Jane Smith", age: 30, status: 0 },
-        { id: 5, name: "John Doe", age: 25, status: 1 },
-        { id: 6, name: "John Doe", age: 25, status: 1 },
-        { id: 7, name: "Jane Smith", age: 30, status: 0 },
-    ];
-
     const handleTabChange = (id) => {
         setTimeout(() => {
             navigate(id);

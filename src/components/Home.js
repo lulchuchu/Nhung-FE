@@ -13,7 +13,7 @@ import { StompSessionProvider, useSubscription } from "react-stomp-hooks";
 
 export default function HOCHome() {
     return (
-        <StompSessionProvider url={"ws://localhost:8080/ws"}>
+        <StompSessionProvider url={"ws://localhost:8081/ws"}>
             <Home></Home>
         </StompSessionProvider>
     );
@@ -39,19 +39,6 @@ function Home() {
             id: "/table",
             icon: QueueListIcon,
         },
-    ];
-
-    const initialData = [
-        { id: 1, status: 1 },
-        { id: 2, status: 0 },
-        { id: 3, status: 1 },
-        { id: 4, status: 0 },
-        { id: 5, status: 0 },
-        { id: 6, status: 1 },
-        { id: 7, status: 0 },
-        { id: 8, status: 0 },
-        { id: 9, status: 0 },
-        { id: 10, status: 0 },
     ];
 
     useEffect(() => {
